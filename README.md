@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>New Features!.md</title><style></style></head><body id="preview">
+<!DOCTYPE html><html><head><meta charset="utf-8"></head><body id="preview">
 <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Kubernetes_Easy_Bug_Free_Setup_for_Ubuntu_1604_and_Ubuntu_1804_0"></a>Kubernetes Easy, Bug Free Setup for Ubuntu 16.04 and Ubuntu 18.04</h2>
 <p class="has-line-data" data-line-start="1" data-line-end="2">Installing kubernetes can be a real pain and there are no tutorials that cover all the instruction needed to complete the successful setup of kubernetes, atleast not in a single place. This guide attempts to mitigate this problem.</p>
 <p class="has-line-data" data-line-start="3" data-line-end="4">This Guide covers.</p>
@@ -83,9 +83,16 @@ sudo chown $(id -u):$(id -g) <span class="hljs-variable">$HOME</span>/.kube/conf
 <p class="has-line-data" data-line-start="121" data-line-end="122">-&gt;Note that the url is subject to change on new release. Kindly refer to this url to get the updated version of pod network</p>
 <pre><code>https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/
 </code></pre>
-<p class="has-line-data" data-line-start="125" data-line-end="126">After this step, run “kubectl get nodes” and you will see the node is in ready state. Now run command “kubectl get pods -n --all-namespaces kube-system -o wide”, this will list down all the pods and will be in running state.</p>
-<p class="has-line-data" data-line-start="127" data-line-end="128">This completes the setup of kubernetes cluster.</p>
-<h2 class="code-line" data-line-start=131 data-line-end=133 ><a id="License_131"></a>License</h2>
-<p class="has-line-data" data-line-start="134" data-line-end="135">MIT</p>
+<p class="has-line-data" data-line-start="125" data-line-end="126">Now to configure the cluster as a single node, we have to untaint the node, run the following command.</p>
+<pre><code>sudo kubectl describe nodes
+</code></pre>
+<p class="has-line-data" data-line-start="129" data-line-end="130">On running logs, goto section called taints and note them down. After that run the following.</p>
+<pre><code>kubectl taint nodes --all &lt;name of taint you noted down&gt;-
+</code></pre>
+<p class="has-line-data" data-line-start="133" data-line-end="134">Dont forget to write the minus sign in the end to successfully remove the taint.</p>
+<p class="has-line-data" data-line-start="135" data-line-end="136">After this step, run “kubectl get nodes” and you will see the node is in ready state. Now run command “kubectl get pods -n --all-namespaces kube-system -o wide”, this will list down all the pods and will be in running state.</p>
+<p class="has-line-data" data-line-start="137" data-line-end="138">This completes the setup of kubernetes cluster.</p>
+<h2 class="code-line" data-line-start=141 data-line-end=143 ><a id="License_141"></a>License</h2>
+<p class="has-line-data" data-line-start="144" data-line-end="145">MIT</p>
 
 </body></html>
