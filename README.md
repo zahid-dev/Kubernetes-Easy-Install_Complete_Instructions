@@ -46,7 +46,7 @@
 <p class="has-line-data" data-line-start="64" data-line-end="65">Now run the following command to list the available stable versions:</p>
 <pre><code>apt-cache madison docker-ce
 </code></pre>
-<p class="has-line-data" data-line-start="68" data-line-end="69">Note down the version from kubernetes release notes and match it with the available version from apt-cache, the plug into the version string:</p>
+<p class="has-line-data" data-line-start="68" data-line-end="69">Note down the version from kubernetes release notes and match it with the available version from apt-cache, then plug into the version string:</p>
 <pre><code>sudo apt-get install docker-ce=&lt;VERSION_STRING&gt; docker-ce-cli=&lt;VERSION_STRING&gt; containerd.io
 </code></pre>
 <p class="has-line-data" data-line-start="72" data-line-end="73">This will install the compatible version of docker on your system, run the following command to check the installation:</p>
