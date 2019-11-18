@@ -10,7 +10,7 @@
 </ul>
 <p class="has-line-data" data-line-start="10" data-line-end="11">It is recommended to use an Ubuntu Server VM(Virtual Machine) for the installation and deployment of kubernetes as it will remove all unnecessary complications and give you better control and learning.</p>
 <h3 class="code-line" data-line-start=12 data-line-end=13 ><a id="Installation_of_Docker_12"></a>Installation of Docker</h3>
-<p class="has-line-data" data-line-start="14" data-line-end="15">Before setting up docker, we need to figure out whick version of docker is compatible with kubernetes. Usually kubernetes run smoothly with the latest stable version of docker but it is recommended to use the version of docker that is verified by kubernetes. Any incompatible version might trigger hard crashing of pods.</p>
+<p class="has-line-data" data-line-start="14" data-line-end="15">Before setting up docker, we need to figure out which version of docker is compatible with kubernetes. Usually kubernetes run smoothly with the latest stable version of docker but it is recommended to use the version of docker that is verified by kubernetes. Any incompatible version might trigger hard crashing of pods.</p>
 <p class="has-line-data" data-line-start="16" data-line-end="17">To find out verified versions of docker for specific version of kubernetes, goto the release notes of kubernetes for that version.</p>
 <pre><code>https://kubernetes.io/docs/setup/release/notes/ 
 </code></pre>
