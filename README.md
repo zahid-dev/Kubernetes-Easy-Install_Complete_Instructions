@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>New Features!.md</title><style></style></head><body id="preview">
+<!DOCTYPE html><html><head><meta charset="utf-8"><style></style></head><body id="preview">
 <h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Kubernetes_Easy_Bug_Free_Setup_for_Ubuntu_1604_and_Ubuntu_1804_0"></a>Kubernetes Easy, Bug Free Setup for Ubuntu 16.04 and Ubuntu 18.04</h2>
 <p class="has-line-data" data-line-start="1" data-line-end="2">Installing kubernetes can be a real pain and there are no tutorials that cover all the instruction needed to complete the successful setup of kubernetes, atleast not in a single place. This guide attempts to mitigate this problem.</p>
 <p class="has-line-data" data-line-start="3" data-line-end="4">This Guide covers.</p>
